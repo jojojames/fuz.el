@@ -36,6 +36,8 @@
 ;; - `fuz-calc-score-skim'
 ;; - `fuz-find-indices-clangd'
 ;; - `fuz-find-indices-skim'
+;; - `fuz-score-all-skim'
+;; - `fuz-score-all-clangd'
 
 ;;; Code:
 
@@ -53,6 +55,8 @@
 (declare-function fuz-core-calc-score-skim "fuz-core")
 (declare-function fuz-core-find-indices-clangd "fuz-core")
 (declare-function fuz-core-find-indices-skim "fuz-core")
+(declare-function fuz-core-score-all-skim "fuz-core")
+(declare-function fuz-core-score-all-clangd "fuz-core")
 
 ;;; Export function aliases
 
@@ -60,6 +64,8 @@
 (defalias 'fuz-calc-score-skim #'fuz-core-calc-score-skim)
 (defalias 'fuz-find-indices-clangd #'fuz-core-find-indices-clangd)
 (defalias 'fuz-find-indices-skim #'fuz-core-find-indices-skim)
+(defalias 'fuz-score-all-skim #'fuz-core-score-all-skim)
+(defalias 'fuz-score-all-clangd #'fuz-core-score-all-clangd)
 
 ;;; Utils
 
